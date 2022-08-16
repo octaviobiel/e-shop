@@ -1,0 +1,18 @@
+.card {
+    border-style: inset;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.card img {
+    max-width: 300px;
+}
+
+.card h3 {
+    text-align: center;
+    background-color: fuchsia;
+}
+
+.card h4 {
+    padding: 0px 0px 5px 5px;
+}
