@@ -22,7 +22,7 @@ const CardDetail = ( {item }) => {
   }
 
   const agregarAlCarrito = () =>{
-    addToCart(counter);
+    addToCart(item, counter);
     navigate('/cart');
   }
 

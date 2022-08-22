@@ -17,7 +17,7 @@ const CartProvider = ( props ) => {
     }
 
     const clearCart = () => {
-        cart.setCart([]);
+        setCart([]);
     }
 
     const isInCart = ( id ) => {
@@ -32,7 +32,9 @@ const CartProvider = ( props ) => {
     }
 
     const deleteProd = ( item ) => {
-        const cartUpdate = cart.filter((prod) => prod !== item.id);
+        console.log('item', item);
+        const cartUpdate = cart.filter((prod) => prod.id !== item.id);
+        console.log('lista', cartUpdate);
         setCart(cartUpdate);
     }
 

@@ -31,6 +31,11 @@ const categories = [
       name: 'Riñoneras',
       path: '/category/rinoneras',
   },
+  {
+      id: 6,
+      name: 'Carrito',
+      path: '/Cart'
+  }
 ];
 
 const socialMedia = [
@@ -73,9 +78,6 @@ const Nav = ({ isHeader }) => {
             ))
               
             }
-            <li>
-              <Link to={'/cart'}>Carrito</Link>
-            </li>
         </ul>
     </nav>
   )

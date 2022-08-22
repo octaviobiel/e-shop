@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { CartContext } from '../../../context/CartContext'
 import { Link } from 'react-router-dom'
 import CartDetail from './CartDetail'
+import Form from '../../Form/Form'
 
 const Cart = () => {
 
@@ -30,6 +31,11 @@ const Cart = () => {
                 <button onClick={clearCart}>Vaciar carrito</button>
                 <h2>Total: {totalPrecio}</h2>
             </div>
+            <Form
+                cart={cart}
+                totalValue={totalPrecio}
+                clearCart={clearCart}
+            />
         </>
     )
 
